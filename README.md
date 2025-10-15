@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📈 MarketWatch
+A slick, drag-and-drop stock tracker.
 
-## Getting Started
+![MarketWatch sneak peek](preview1.png)
 
-First, run the development server:
+🚀 Setup
+bash# Install dependencies
+npm install
 
-```bash
+# Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 and you're golden.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🎯 The Approach
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+What it does
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Drag & Drop Reordering: Grab stocks by the grip icon and rearrange them however you want
+Quick Actions on Hover: Buy/Sell/Delete buttons appear when you hover over a stock 
+Keyboard Shortcuts: Press F to jump straight to search 
+Real-time Filtering: Search by symbol or company name
+Responsive Design: Works on mobile, tablet, desktop 
 
-## Learn More
+Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+Next.js 14 with App Router 
+React for the component stuff
+TypeScript 
+Tailwind CSS for styling
+Lucide Icons for the pretty icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Design Choices
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dark theme only
+Glassmorphism
+Minimal state management
 
-## Deploy on Vercel
+Code Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Single component file 
+Inline state management
+TypeScript interfaces for the stock data so we know what we're working with
+Hover states handled with local component state for better performance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Features
+
+✅ Smooth drag-and-drop reordering
+✅ Hover-activated action buttons (Buy, Sell, Chart, Delete, etc.)
+✅ Live search with instant filtering
+✅ Keyboard shortcut (F) for search focus
+✅ Color-coded gains/losses (green good, red bad)
+✅ Responsive layout that adapts to screen size
+✅ Sticky header because scrolling shouldn't make you lose context

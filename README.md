@@ -1,53 +1,63 @@
-📈 MarketWatch
-A slick, drag-and-drop stock tracker.
+# 📈 MarketWatch
 
-![MarketWatch sneak peek](preview1.png)
+A slick, drag-and-drop stock tracker 
 
-🚀 Setup
-bash# Install dependencies
+## 👀 Preview
+
+![MarketWatch Preview](./preview1.png)
+
+
+## 🚀 Setup
+
+```bash
+# Install dependencies
+npm install lucide-react
 npm install
 
 # Run the dev server
 npm run dev
-Open http://localhost:3000 and you're golden.
+```
 
-🎯 The Approach
+Open [http://localhost:3000](http://localhost:3000) and you're golden.
 
-What it does
+## 🎯 The Approach
 
-Drag & Drop Reordering: Grab stocks by the grip icon and rearrange them however you want
-Quick Actions on Hover: Buy/Sell/Delete buttons appear when you hover over a stock 
-Keyboard Shortcuts: Press F to jump straight to search 
-Real-time Filtering: Search by symbol or company name
-Responsive Design: Works on mobile, tablet, desktop 
+### What it does
 
-Tech Stack
+- **Drag & Drop Reordering**: Grab stocks by the grip icon and rearrange them however you want
+- **Quick Actions on Hover**: Buy/Sell/Delete buttons appear when you hover over a stock
+- **Keyboard Shortcuts**: Press `F` to jump straight to search
+- **Real-time Filtering**: Search by company name
+- **Responsive Design**: Works on mobile, tablet, desktop 
 
-Next.js 14 with App Router 
-React for the component stuff
-TypeScript 
-Tailwind CSS for styling
-Lucide Icons for the pretty icons
+### Tech Stack
 
-Design Choices
+- **Next.js 14** with App Router
+- **React** for the component stuff
+- **TypeScript** to prevent 3 AM bugs
+- **Tailwind CSS** for styling
+- **Lucide Icons** for the pretty icons
 
-Dark theme only
-Glassmorphism
-Minimal state management
+### Design Choices
 
-Code Structure
+- **Dark theme only**
+- **Glassmorphism**
+- **Minimal state management**
 
-Single component file 
-Inline state management
-TypeScript interfaces for the stock data so we know what we're working with
-Hover states handled with local component state for better performance
+### Code Structure
 
- Features
+- Single component file 
+- Inline state management 
+- TypeScript interfaces for the stock data so we know what we're working with
+- Hover states handled with local component state for better performance
 
-✅ Smooth drag-and-drop reordering
-✅ Hover-activated action buttons (Buy, Sell, Chart, Delete, etc.)
-✅ Live search with instant filtering
-✅ Keyboard shortcut (F) for search focus
-✅ Color-coded gains/losses (green good, red bad)
-✅ Responsive layout that adapts to screen size
-✅ Sticky header because scrolling shouldn't make you lose context
+## 🎨 Features
+
+- ✅ Smooth drag-and-drop reordering
+- ✅ Hover-activated action buttons (Buy, Sell, Chart, Delete, etc.)
+- ✅ Live search with instant filtering
+- ✅ Keyboard shortcut (F) for search focus
+- ✅ Color-coded gains/losses (green good, red bad)
+- ✅ Responsive layout that adapts to screen size
+- ✅ Sticky header because scrolling shouldn't make you lose context
+
